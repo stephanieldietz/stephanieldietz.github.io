@@ -1,25 +1,25 @@
-name,r,t,fill,page
-Stephanie Dietz,25,25,#FF6666,http://about.me/stephanieldietz
-Projects,15,20,#142F54,
-Teaching,15,20,#142F54,
-Methods,15,20,#142F54,
-Statistics,15,20,#142F54,
-ANOVA,8,15,#142F54,
-T-Test,8,15,#142F54,
-Regressions,8,15,#142F54,
-A/B Testing,8,15,#142F54,
-Factor Analysis,8,15,#142F54,
-Social Network Analysis,8,15,#142F54,
-Undergraduate Stats,8,15,#142F54,http://localhost:8000/syllabi/psycstats.pdf
-Graduate Stats,8,15,#142F54,http://localhost:8000/syllabi/gradstats.pdf
-Human Development,8,15,#142F54,http://localhost:8000/syllabi/devpsyc.pdf
-Psychology of Women,8,15,#142F54,http://localhost:8000/syllabi/psycwomen.pdf
-Longitudinal,8,15,#142F54,
-Eye Tracker,8,15,#142F54,
-Survey Creation,8,15,#142F54,
-Expirimental Design,8,15,#142F54,
-Student Motivation,8,15,#142F54,http://localhost:8000/MotFail/index.html
-Phones and Friends,8,15,#142F54,http://localhost:8000/phones/index.html
-Texting in Class,8,15,#142F54,http://localhost:8000/Texting/index.html
-After School Care,8,15,#142F54,http://localhost:8000/asc/index.html
-Language and Cognition,8,15,#142F54,http://localhost:8000/lang/index.html
+name,r,t,fill,page,
+Stephanie Dietz,25,25,#FF6666,http://about.me/stephanieldietz,0
+Projects,15,20,#142F54,,1
+Teaching,15,20,#142F54,,2
+Methods,15,20,#142F54,,3
+Statistics,15,20,#142F54,,4
+ANOVA,8,15,#142F54,,5
+T-Test,8,15,#142F54,,6
+Regressions,8,15,#142F54,,7
+A/B Testing,8,15,#142F54,,8
+Factor Analysis,8,15,#142F54,,9
+Social Network Analysis,8,15,#142F54,,10
+Undergraduate Stats,8,15,#142F54,syllabi/psycstats.pdf,11
+Graduate Stats,8,15,#142F54,/syllabi/gradstats.pdf,12
+Human Development,8,15,#142F54,/syllabi/devpsyc.pdf,13
+Psychology of Women,8,15,#142F54,/syllabi/psycwomen.pdf,14
+Longitudinal,8,15,#142F54,,15
+Eye Tracker,8,15,#142F54,,16
+Survey Creation,8,15,#142F54,,17
+Expirimental Design,8,15,#142F54,,18
+Student Motivation,8,15,#142F54,/MotFail/index.html,19
+Phones and Friends,8,15,#142F54,phones/index.html,20
+Texting in Class,8,15,#142F54,/Texting/index.html,21
+After School Care,8,15,#142F54,/asc/index.html,22
+Language and Cognition,8,15,#142F54,/lang/index.html,23
