@@ -47,7 +47,7 @@ links.forEach(function(link) {
 });
 
 var width = 1500,
-    height = 500;
+    height = 1500;
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
