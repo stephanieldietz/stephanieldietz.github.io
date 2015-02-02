@@ -80,7 +80,7 @@ var node = svg.selectAll(".node")
     //.call(force.drag);
 	
 node.append("circle")
-    .attr ("r", function(d) {return (parseInt(d.r));})
+    .attr ("r", function(d) {return (parseInt(d.r)*2);})
 	.attr ("fill", function(d) {return (d.fill);})
 	.style("stroke", "#C0C0C0")
 	.style("stroke-width", 5)
@@ -140,7 +140,7 @@ function mouseout() {
   .select("circle")
 	.transition()
       .duration(750)
-      .attr ("r", function(d) {return (parseInt(d.r)*5);})
+      .attr ("r", function(d) {return (parseInt(d.r)*2);})
 	  .attr ("fill", function(d) {return (d.fill);}); 
   d3.select(this)
 		.select("text")
@@ -150,7 +150,7 @@ function mouseout() {
   d3.select(this)
    .select("text")
    .text(function(d) {
-        if (d.r>10) {
+        if (d.r>9) {
 		return d.name;}
    });
 }
