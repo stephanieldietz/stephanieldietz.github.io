@@ -80,7 +80,7 @@ var node = svg.selectAll(".node")
     //.call(force.drag);
 	
 node.append("circle")
-    .attr ("r", function(d) {return (parseInt(d.r)*5);})
+    .attr ("r", function(d) {return (parseInt(d.r));})
 	.attr ("fill", function(d) {return (d.fill);})
 	.style("stroke", "#C0C0C0")
 	.style("stroke-width", 5)
