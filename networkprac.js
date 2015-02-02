@@ -132,7 +132,7 @@ function mouseover() {
 		.select("text")
 		.transition()
 		.duration(750)
-		.attr("font-size", function(d) {return parseInt(d.t)*2;})
+		.attr("font-size", function(d) {return parseInt(d.t)*3;})
   };
 
 function mouseout() {
