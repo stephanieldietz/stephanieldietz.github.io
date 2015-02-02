@@ -46,8 +46,8 @@ links.forEach(function(link) {
   link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
 });
 
-var width = 2000,
-    height = 1000;
+var width = 1500,
+    height = 500;
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
