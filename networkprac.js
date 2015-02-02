@@ -52,15 +52,15 @@ var width = 1500,
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
-    .size([width, height])
+    //.size([width, height])
     .linkDistance(10)
     .charge(-5000)
     .on("tick", tick)
     .start();
 
 var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    //.attr("width", width)
+    //.attr("height", height);
 
 var link = svg.selectAll(".link")
     .data(force.links())
