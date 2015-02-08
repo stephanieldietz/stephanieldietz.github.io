@@ -46,8 +46,28 @@ links.forEach(function(link) {
   link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
 });
 
-var width = "750",
-    height = 950;
+var width = 1000,
+    height = 1000;
+
+
+var svg = d3.select("body").append("svg")
+      .attr({
+        "width": "60%",
+        "height": "100%"
+      })
+      .attr("viewBox", "0 0 " + width + " " + height )
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .attr("pointer-events", "all")
+    .call(d3.behavior.zoom().on("zoom", redraw));
+	
+var vis = svg
+    .append('svg:g');
+
+function redraw() {
+  vis.attr("transform",
+      "translate(" + d3.event.translate + ")"
+      + " scale(" + d3.event.scale + ")");
+}
 
 var force = d3.layout.force()
     .nodes(d3.values(nodes))
@@ -57,11 +77,7 @@ var force = d3.layout.force()
     .charge(-2500)
     .on("tick", tick)
     .start();
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
+	
 var link = svg.selectAll(".link")
     .data(force.links())
   .enter().append("line")
@@ -92,15 +108,14 @@ node.append("circle")
 node.append("text")
     //.attr("x", -30)
     //.attr("y", -30)
-    .text(function(d) 
+    .html(function(d) 
 	{if (d.r > 9)
-	{ return d.name; }
+	{ return d.name}
 })
 .attr("text-anchor", "middle")
-	.attr("fill", "white")
+	.attr("fill", "#FFF")
 	.attr("font-size",function(d) {return parseInt(d.t);})
-	//.attr("stroke-width",.5)
-	//.attr("stroke", "#000000");
+	.attr("font-family", "sans-serif");
 
 function tick() {
   link
@@ -125,7 +140,7 @@ function mouseover() {
 					return parseInt(d.r) * 10;
 				}
 			);
-	element.select("text").text(function(d) {
+	element.select("text").html(function(d) {
 		return d.name;
 	})
 	d3.select(this)
@@ -133,6 +148,9 @@ function mouseover() {
 		.transition()
 		.duration(750)
 		.attr("font-size", function(d) {return parseInt(d.t)*3;})
+	.attr("font-family", "sans-serif")
+	.attr("stroke", "#000")
+	.attr("stroke-width", 1)
   };
 
 function mouseout() {
@@ -147,11 +165,12 @@ function mouseout() {
 		.transition()
 		.duration(700)
 		.attr("font-size", function(d) {return parseInt(d.t);})
+		.attr("stroke-width", 0)
   d3.select(this)
    .select("text")
-   .text(function(d) {
+   .html(function(d) {
         if (d.r>9) {
-		return d.name;}
+		return d.name}
    });
 }
 });
