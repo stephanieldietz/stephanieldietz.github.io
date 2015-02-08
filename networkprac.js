@@ -141,7 +141,9 @@ function mouseover() {
 				}
 			);
 	element.select("text").html(function(d) {
-		return d.name;
+		return "<tspan x='0'>" + 
+		  d.name.split("<br>").join("</tspan><tspan x='0' dy='1em'>") +
+		  "</tspan>";
 	})
 	d3.select(this)
 		.select("text")
@@ -170,7 +172,9 @@ function mouseout() {
    .select("text")
    .html(function(d) {
         if (d.r>9) {
-		return d.name}
+		return "<tspan x='0'>" + 
+		  d.name.split("<br>").join("</tspan><tspan x='0' dy='1em'>") +
+		  "</tspan>";}
    });
 }
 });
