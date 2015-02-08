@@ -141,16 +141,18 @@ function mouseover() {
 				}
 			);
 	element.select("text").html(function(d) {
-		return d.name;
+		return "<tspan x='0' dy = '-1%'>" + 
+		  d.name.split("<br>").join("</tspan><tspan x='0' dy='2%'>") +
+		  "</tspan>";
 	})
 	d3.select(this)
 		.select("text")
 		.transition()
 		.duration(750)
-		.attr("font-size", function(d) {return parseInt(d.t)*3;})
+		.attr("font-size", function(d) {return parseInt(d.t)*2;})
 	.attr("font-family", "sans-serif")
-	.attr("stroke", "#000")
-	.attr("stroke-width", 1)
+	//.attr("stroke", "#000")
+	//.attr("stroke-width", 1)
   };
 
 function mouseout() {
@@ -170,7 +172,9 @@ function mouseout() {
    .select("text")
    .html(function(d) {
         if (d.r>9) {
-		return d.name}
+		return "<tspan x='0' dy='-1%'>" + 
+		  d.name.split("<br>").join("</tspan><tspan x='0' dy='2%'>") +
+		  "</tspan>";}
    });
 }
 });
