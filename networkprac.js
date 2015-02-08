@@ -142,7 +142,7 @@ function mouseover() {
 			);
 	element.select("text").html(function(d) {
 		return "<tspan x='0' dy='1em'>" + 
-		  d.name.split("\n").join("</tspan><tspan x='0' dy='1em'>") +
+		  d.name.split("<br>").join("</tspan><tspan x='0' dy='1em'>") +
 		  "</tspan>";
 	})
 	d3.select(this)
