@@ -1,4 +1,3 @@
-
 var nodes = {};
 d3.csv("Mindmap.csv", function (data) {
 	nodes = data;
@@ -9,6 +8,30 @@ d3.csv("Mindmap.csv", function (data) {
 		}, {
 			source : 0,
 			target : 2
+		}, {
+			source : 0,
+			target : 3
+		}, {
+			source : 0,
+			target : 4
+		}, {
+			source : 4,
+			target : 5
+		}, {
+			source : 4,
+			target : 6
+		}, {
+			source : 4,
+			target : 7
+		}, {
+			source : 4,
+			target : 8
+		}, {
+			source : 4,
+			target : 9
+		}, {
+			source : 4,
+			target : 10
 		}, {
 			source : 2,
 			target : 11
@@ -21,6 +44,18 @@ d3.csv("Mindmap.csv", function (data) {
 		}, {
 			source : 2,
 			target : 14
+		}, {
+			source : 3,
+			target : 15
+		}, {
+			source : 3,
+			target : 16
+		}, {
+			source : 3,
+			target : 17
+		}, {
+			source : 3,
+			target : 18
 		}, {
 			source : 1,
 			target : 19
@@ -36,64 +71,8 @@ d3.csv("Mindmap.csv", function (data) {
 		}, {
 			source : 1,
 			target : 23
-		}, {
-			source : 19,
-			target : 9
-		}, {
-			source : 19,
-			target : 7
-		}, {
-			source : 19,
-			target : 15
-		}, {
-			source : 19,
-			target : 17
-		}, {
-			source : 20,
-			target : 7
-		}, {
-			source : 20,
-			target : 10
-		}, {
-			source : 20,
-			target : 15
-		}, {
-			source : 21,
-			target : 5
-		}, {
-			source : 21,
-			target : 6
-		}, {
-			source : 21,
-			target : 8
-		}, {
-			source : 21,
-			target : 17
-		}, {
-			source : 21,
-			target : 18
-		}, {
-			source : 22,
-			target : 9
-		}, {
-			source : 22,
-			target : 7
-		}, {
-			source : 22,
-			target : 15
-		}, {
-			source : 22,
-			target : 17
-		}, {
-			source : 23,
-			target : 7
-		}, {
-			source : 23,
-			target : 16
-		}, {
-			source : 23,
-			target : 18
-		},
+		}
+
 	];
 
 	d3.selection.prototype.moveToFront = function () {
@@ -140,7 +119,7 @@ d3.csv("Mindmap.csv", function (data) {
 		.links(links)
 		.size([width, height])
 		.linkDistance(3)
-		.charge(-3500)
+		.charge(-2500)
 		.on("tick", tick)
 		.start();
 
