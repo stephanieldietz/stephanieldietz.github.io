@@ -12,25 +12,10 @@ d3.csv("Mindmap.csv", function (data) {
 			source : 0,
 			target : 3
 		}, {
-			source : 0,
-			target : 4
-		}, {
-			source : 4,
-			target : 5
-		}, {
-			source : 4,
-			target : 6
-		}, {
-			source : 4,
-			target : 7
-		}, {
-			source : 4,
-			target : 8
-		}, {
-			source : 4,
+			source : 2,
 			target : 9
 		}, {
-			source : 4,
+			source : 2,
 			target : 10
 		}, {
 			source : 2,
@@ -39,38 +24,38 @@ d3.csv("Mindmap.csv", function (data) {
 			source : 2,
 			target : 12
 		}, {
-			source : 2,
-			target : 13
-		}, {
-			source : 2,
-			target : 14
-		}, {
-			source : 3,
+			source : 1,
 			target : 15
 		}, {
-			source : 3,
+			source : 1,
 			target : 16
 		}, {
-			source : 3,
+			source : 1,
 			target : 17
 		}, {
-			source : 3,
+			source : 1,
 			target : 18
 		}, {
 			source : 1,
-			target : 19
+			target : 14
 		}, {
-			source : 1,
-			target : 20
+			source : 3,
+			target : 4
 		}, {
-			source : 1,
-			target : 21
+			source : 3,
+			target : 5
 		}, {
-			source : 1,
-			target : 22
+			source : 3,
+			target : 6
 		}, {
-			source : 1,
-			target : 23
+			source : 3,
+			target : 7
+		}, {
+			source : 3,
+			target : 8
+		}, {
+			source : 3,
+			target : 13
 		}
 
 	];
@@ -138,7 +123,8 @@ d3.csv("Mindmap.csv", function (data) {
 		.attr("class", "node")
 		.on("mouseover", mouseover)
 		.on("mouseout", mouseout)
-		.on("click", function (page) {
+		.on("click",
+			function (page) {
 			window.open(page.page)
 		});
 

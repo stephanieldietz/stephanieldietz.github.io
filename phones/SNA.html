@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Phones and Friends</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1></h1>
+        </div>
+    </aside>
+<!-- Methods -->
+	<section id="methods", class="methods">
+		<div class ="container">
+			<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Project Overview</h2>
+				<p>Participants were asked to use <b>Android smartphones</b> preinstalled with our software that could record and send 
+				<b>phone usage data</b> and colocation 
+				information to our server located in the university. 
+				The software application ran on any android mobile phone, and would automatically start at bootup. 
+				We used the <b>WiFi fingerprinting</b> method for indoor localization, which achieved an accuracy of 5-7 meters in our study. 
+				We also implemented periodic <b>Bluetooth scanning</b> to discover participants that were close to each other. 
+				This study followed participants for <b>one academic year.</b><br>
+				<br>
+				Participants were also asked to complete <b>self-reported questionnaires</b> on <i>language use, 
+				friendship tie-strength, and adaptation to college life</i>, <b>once each term</b> (~every 13 weeks).<br>
+
+				
+				                <br>
+ 				
+				</p>
+				</div>
+			</div>
+		</div>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Social Network Analysis</h2>
+					<p> Social Network Analysis (SNA) allows for an examination of the ways in which different human behaviors change the ties they have with each other. 
+					For example, in the below model, I investigate the behaviors that increase the likelihood two people would become friends. The reverse analysis is also possible, 
+					looking into how friendship ties change individual behavior. 
+                    <hr class="small">
+                    <div class="row">
+                            <div class="portfolio-item">
+                                <a href = "../pdf/R.pdf">
+                                    <img class="img-portfolio img-responsive" src="img/phones2.png">
+                                </a>
+								<p>Click through for code sample.</p>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                  
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div id="learn" class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Want to learn more?</h3>
+					<p> This is an ongoing project. <br>E-mail me for up-to-date information on papers and publications, or if you have any questions!</p>
+                    <a href="pdf/phones.pdf" class="btn btn-lg btn-light">Summary</a>
+					<a href="pdf/phones2.pdf" class="btn btn-lg btn-dark">Longitudinal Results</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Stephanie Dietz</strong>
+                    </h4>
+                    <p>Atlanta, GA</p>
+                    <ul class="list-unstyled">
+                        
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:stephanieldietz@gmail.com">stephanieldietz@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/stephanieldietz/stephanieldietz.github.io/tree/master/phones"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
