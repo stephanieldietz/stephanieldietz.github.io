@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Motivated after Failure</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1></h1>
+        </div>
+    </aside>
+<!-- Methods -->
+	<section id="methods", class="methods">
+		<div class ="container">
+			<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Project Overview</h2>
+				<p>This two part study involved <b>113 British secondary school students</b>, 
+				and investigated their reactions to a shaming experience. 
+				Participants were sampled from the year 7 (11-12) and the year 9 (13-14) classes. 
+				For the first part, all of the participants were given a series of vignettes in which they were asked to <b>imagine a failure</b>. 
+				Their responses to these vignettes were then surveyed. The participants were asked to rank the likelihood of <b>emotion reactions</b>, 
+				as well as what their <b>future actions</b> would be towards a task similar to the imagined failed task. <br> 
+				<br>
+				In the second study, <b>issues with high intercorrelations</b> between performance-approach and performance-avoidance were noted. In response, 
+				a new 3x2 goal orientation framework has been posited. This study examines this new framework using 
+				a <b>multi-trait, multi-method (MTMM) confirmatory factor analysis</b> (N = 201) as a way to examine the differential effects of the two orthogonal scales. <br>
+				
+				                <br>
+ 				
+				</p>
+				</div>
+			</div>
+		</div>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Example Factor Analysis</h2>
+					<p> This factor analysis was used to investigate the interrelationships between Approach and Avoidance based Test, Self and Other motivations.
+					By implementing a MTMM CFA, the orthogonality of the relationship could be maintained.</p>
+                    <hr class="small">
+                            <div class="portfolio-item">
+                                <a  href="../pdf/mplus.pdf">
+                                    <img class="img-portfolio img-responsive" src="img/factor.jpg">
+									<p>Click through for code.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                  
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside id = "learn" class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Click below to see the full project.</h3>
+                    <a href="index.html" class="btn btn-lg btn-light">Project Page</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Stephanie Dietz</strong>
+                    </h4>
+                    <p>Atlanta, GA</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:stephanieldietz@gmail.com">stephanieldietz@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/stephanieldietz/stephanieldietz.github.io/tree/master/MotFail"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

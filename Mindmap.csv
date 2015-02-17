@@ -1,23 +1,18 @@
-name,r,t,fill,page,
+name,r,t,fill,page,order
 Stephanie Dietz,16,15,#FF6666,http://about.me/stephanieldietz,0
 Projects,12,15,#142F54,/projects/index.html,1
-Teaching,12,15,#142F54,/projects/index.html,2
-Methods,12,15,#142F54,/projects/index.html,3
-Statistics,12,15,#142F54,/projects/index.html,4
-ANOVA,8,10,#142F54,/projects/index.html,5
-T-Test,8,10,#142F54,/projects/index.html,6
-Regressions,8,10,#142F54,/projects/index.html,7
-A/B<br>Testing,8,10,#142F54,/projects/index.html,8
-Factor<br>Analysis,8,10,#142F54,/projects/index.html,9
-Social<br>Network<br>Analysis,8,10,#142F54,/projects/index.html,10
+Teaching,12,15,#142F54,https://github.com/stephanieldietz/stephanieldietz.github.io/tree/master/teaching,2
+Statistics <br> and <br> Methods,12,15,#142F54,/projects/index.html,4
+T-Test,8,10,#142F54,Texting/abtest.html,6
+Regressions <br> and <br> SEM,8,10,#142F54,/projects/regressions.html,7
+A/B<br>Testing,8,10,#142F54,/Texting/abtest.html,8
+Factor<br>Analysis,8,10,#142F54,/MotFail/factor.html,9
+Social<br>Network<br>Analysis,8,10,#142F54,/phones/SNA.html,10
 Undergraduate<br>Stats,8,10,#142F54,syllabi/psycstats.pdf,11
 Graduate<br>Stats,8,10,#142F54,/syllabi/gradstats.pdf,12
 Human<br>Development,8,10,#142F54,/syllabi/devpsyc.pdf,13
 Psychology<br>of<br>Women,8,10,#142F54,/syllabi/psycwomen.pdf,14
-Longitudinal,8,10,#142F54,/projects/index.html,15
-Eye<br>Tracker,8,10,#142F54,/projects/index.html,16
-Survey<br>Creation,8,10,#142F54,/projects/index.html,17
-Expirimental<br>Design,8,10,#142F54,/projects/index.html,18
+Survey<br>Creation,8,10,#142F54,/Texting/survey.html,17
 Student<br>Motivation,8,10,#142F54,/MotFail/index.html,19
 Phones<br>and<br>Friends,8,10,#142F54,phones/index.html,20
 Texting<br>in<br>Class,8,10,#142F54,/Texting/index.html,21
